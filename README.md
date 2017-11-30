@@ -37,7 +37,7 @@ localhost                  : ok=4    changed=2    unreachable=0    failed=0
 
 # add id-address of newly created instance in Hosts file
 
-# running script on the newly created instance to deploy our application
+# running script on the newly created instance to deploy your application
 
 ```
 ansible-playbook -i Hosts start-application.yaml
