@@ -1,0 +1,13 @@
+- name: Delete EC2 instance
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+  - name: Terminate instance
+    local_action:
+        module: ec2
+        aws_access_key: <your aws_access_key>
+        aws_secret_key: <your aws_secret_key>
+        region: <your aws_region>
+        state: 'absent'
+        instance_ids: '<your aws_instance_id of the running instance>'

@@ -1,0 +1,7 @@
+- name: Installing sample node application
+  hosts: webserver
+  remote_user: ubuntu
+  sudo: yes
+  tasks:
+    - name: Transfer the script now!
+      script: installNodeApp.sh

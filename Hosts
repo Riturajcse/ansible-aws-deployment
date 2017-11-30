@@ -1,0 +1,6 @@
+[local]
+localhost
+
+[webserver]
+<your aws instance public ip>
+
